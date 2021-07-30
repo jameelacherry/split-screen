@@ -1,0 +1,374 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap');
+:root{
+    --left-bg-color:transparent;
+    --right-bg-color:rgba(14, 13, 13, 0.8);
+    --left-btn-hover-color:rgb(111, 176, 236);
+    --right-btn-hover-color: rgba(28,122,28, 1);
+    --hover-width:75%;
+    --other-width:25%;
+    --speed:1000ms;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:'roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: scroll;
+    
+}
+
+
+    
+  
+
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 1.5em;
+    border-radius: 100%;
+    box-shadow:  0 8px 8px -5px #eee;
+   
+}
+
+
+
+.name {
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.title {
+    color: #f2f3f7;
+    font-size: .75em;
+    font-weight: 300;
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: .7em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.description {
+    color: #f6f7fa;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1.3em;
+}
+/* left split button */
+.btn2 {
+    color: #fff;
+    width: 130px;
+    height: 42px;
+    outline: none;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 70px;
+    box-shadow: 0 8px 8px -5px #eee;
+    background: linear-gradient(rgb(231, 29, 231),rgb(235, 16, 53));
+   
+    
+    
+}
+
+
+
+
+
+  
+
+ .inner{
+    text-decoration: none; 
+   color: #fff;
+   font-size: medium;
+			
+} 
+
+
+
+hr{
+    position: absolute;
+    bottom: 50px;
+    color: #f6f7fa ;
+    width:100%;
+    height: 1px;
+  
+}
+
+ 
+
+    
+
+
+  
+
+
+/* end of left screen button */
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  justify-content: center;
+  column-gap: 30px;
+  display: flex;
+  font-size: 30px;
+}
+footer a {
+  color: black;
+  margin-left:5px;
+}
+.fa-twitter:hover{
+  color:skyblue;
+}
+.fa-github:hover{
+  color:#f5f5f5;
+}
+.fa-facebook-f:hover{
+    color:#2236ec;
+  }
+
+/* end of skills box */
+
+  /* right side cards */
+  
+  
+  
+   
+
+/* right screen */
+.main-container {
+    padding: 30px;
+  }
+  
+  /* HEADING */
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .heading__title {
+    font-weight: 600;
+  }
+  
+  .heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+  }
+  
+  .heading__link {
+    text-decoration: none;
+  }
+  
+  .heading__credits .heading__link {
+    color: inherit;
+  }
+  
+  /* CARDS */
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .card__link,
+  .card__exit,
+  .card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+  }
+  
+  .card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .card__apply {
+    grid-row: 4/5;
+    align-self: center;
+  }
+  
+  /* CARD BACKGROUNDS */
+  
+  .card-1 {
+    background: radial-gradient(#b9c1c2, #1b1c1d);
+  }
+  
+  .card-2 {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+  }
+  
+  .card-3 {
+    background: radial-gradient(#76b2fe, #b69efe);
+  }
+  
+  .card-4 {
+    background: radial-gradient(#60efbc, #58d5c9);
+  }
+  
+  .card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+  }
+  
+/* end of right screen */
+
+
+
+
+
+
+
+
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:rgb(243, 241, 241);
+}
+
+.split{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left{
+    left: 0;
+    background:linear-gradient(to right,rgb(221, 219, 219), rgb(90, 85, 85),rgb(70, 67, 67));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.right{
+    right: 0;
+    background: rgb(253, 248, 248);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.right, .split.left, .split.right::before,.split.left::before{
+    transition: all var(--speed) ease-in-out;
+}
+
+.split.left::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color) ;
+}
+
+.split.right::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color) ;
+}
+ .hover-left .left{
+     width: var(--hover-width);
+ }
+
+.hover-left .right{
+    width: var(--other-width);
+}
+
+
+.hover-right .right{
+    width: var(--hover-width);
+}
+
+.hover-right .left{
+   width: var(--other-width);
+}
+
+
+@media(max-width:800px){
+    h1{
+        font-size:2rem;
+        top: 30%;
+    }
+
+    .btn{
+       width: 12rem; 
+       padding: 1.2rem;
+    }
+}
